@@ -1,0 +1,525 @@
+print("\n    Hi, welcome to Marks Game Center")
+print("    --------------------------------")
+
+
+
+def gameoptions():
+        done = False
+        while not done:
+                print("\n ~Press (A) & Enter for a QUIZ ON NYC~")
+                print(" ------       --------------       -------- ")
+                print("")
+        
+                print("\n ~Press (B) & Enter for a MONEY MANAGEMENT~")
+                print(" ------       ----------------     -------- ")
+                print("")
+        
+                print("\n ~Press (C) & Enter for a NUMBER GUESS GAME~")
+                print(" ------       ---------------      -------- ")
+                print("")
+
+                print("\n ~Press (D) & Enter for a AGE IDENTIFIER GAME~")
+                print(" ------       ---------------      -------- ")
+                print("")
+        
+                print("\n           ~Press (E) to Quit~")
+                print("             ---------------")
+        
+                gameoption1 = input("\nType the letter of the game you wish to play: ")
+                print("-----------------------------------------")
+                if gameoption1=="A" or gameoption1=="a":
+                        NYCQ()
+                if gameoption1=="B" or gameoption1=="b":
+                        MM()
+                if gameoption1=="C" or gameoption1=="c":
+                        NG()
+                if gameoption1=="D" or gameoption1=="d":
+                        AI()
+                elif gameoption1=="E" or gameoption1=="e":
+                        done = True
+                        quit
+
+
+
+
+                        
+#Parent Abstraction
+def NYCQ():
+        NYCQstart()
+        NYCQbody()
+        NYCQpa()
+     
+# QUIZ START
+def NYCQstart():
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\nThis quiz tests your knowledge of New York City Facts\n")
+        name = input("Enter your name: ")
+        print("\n Hi there", name)
+        print("\nI will ask you 10 questions and give you three choices for each question.\n")
+        print("Select the right choice from the options: A, B, C")
+        print("---------------")
+#QUIZ BODY
+def NYCQbody():
+        score=0
+        score=int(score)
+        print("\n---------------")
+        print("Question 1: What is the capital of New York State?")
+        print("A: New York City")
+        print("B: Syracuse")
+        print("C: Albany")
+        Q1answer="C"
+        Q1response= input("Enter your answer: ")
+        if Q1response=="C" or Q1response=="c":
+                score=score+1
+                print("Well done", Q1response, "is correct")
+                print("your current score is", score)
+        elif Q1response =="a" or Q1response =="A" or Q1response =="b" or Q1response =="B":
+                print("Wrong Answer")
+                print("---------------")
+#QUIZ QUESTION #2
+        print("\n---------------")
+        print("\nQuestion 2: What is the largest park in New York City?")
+        print("A: Washington Square Park")
+        print("B: Battery Park")
+        print("C: Central Park")
+        Q2answer="C"
+        Q2response= input("Enter your answer: ")
+        if Q2response=="C" or Q2response=="c":
+                score=score+1
+                print("Well done", Q2response, "is correct")
+                print("your current score is", score)
+        elif Q2response =="a" or Q2response =="A" or Q2response =="b" or Q2response =="B":
+                print("Wrong Answer")
+                print("---------------")
+                
+                        
+#QUIZ QUESTION #3
+        print("\n---------------")
+        print("\nQuestion 3: What subway line ends at 96st?")
+        print("A: Q subwayline")
+        print("B: F subwayline")
+        print("C: E subwayline")
+        Q3answer="A"
+        Q3response= input("Enter your answer: ")
+        if Q3response=="A" or Q3response=="a":
+                score=score+1
+                print("Well done", Q3response, "is correct")
+                print("your current score is", score)
+        elif Q3response =="b" or Q3response =="B" or Q3response =="c" or Q3response =="c" :
+                print("Wrong Answer")
+                print("---------------")
+                
+                
+#QUIZ QUESTION #4
+        print("\n---------------")
+        print("\nQuestion 4: What is the tallest building in New York City?")
+        print("A: Empire State Building")
+        print("B: One World Trade Center")
+        print("C: Chrysler Building")
+        Q4answer="B"
+        Q4response= input("Enter your answer: ")
+        if Q4response=="B" or Q4response=="b":
+                score=score+1
+                score=score+1
+                print("Well done", Q4response, "is correct")
+                print("your current score is", score)
+        elif Q4response =="a" or Q4response =="A" or Q4response =="C" or Q4response =="c":
+                print("Wrong Answer")
+                print("---------------")
+                
+#QUIZ QUESTION #5
+        
+        print("\n---------------")
+        print("\nQuestion 5: What island sits in the East River, between Manhattan and Queens?")
+        print("A: Roosevelt Island")
+        print("B: Randals Island")
+        print("C: Rikers Island")
+        Q5answer="A"
+        Q5response= input("Enter your answer: ")
+        if Q5response=="A" or Q5response=="a":
+                score=score+1
+                print("Well done", Q5response, "is correct")
+                print("your current score is", score)
+        elif Q5response =="b" or Q5response =="B" or Q5response =="c" or Q5response =="C":
+                print("Wrong Answer")
+                print("---------------")
+                
+#QUIZ QUESTION #6
+        
+        print("\n---------------")
+        print("\nQuestion 6: What is the only aerial commuter system in North America?")
+        print("A: Ocean bridge")
+        print("B: Roosevelt Island Tramway")
+        print("C: Riverview Skybridge")
+        Q6answer="B"
+        Q6response= input("Enter your answer: ")
+        if Q6response=="B" or Q6response=="b":
+                score=score+1
+                print("Well done", Q6response, "is correct")
+                print("your current score is", score)
+        elif Q6response =="a" or Q6response =="A" or Q6response =="c" or Q6response =="C":
+                print("Wrong Answer")
+                print("---------------")
+                
+#QUIZ QUESTION #7
+        
+        print("\n---------------")
+        print("\nQuestion 7: Largest retail store location in the Harold Square area?")
+        print("A: JC Penny")
+        print("B: Best Buy")
+        print("C: Macy's")
+        Q7answer="C"
+        Q7response= input("Enter your answer: ")
+        if Q7response=="C" or Q7response=="c":
+                score=score+1
+                print("Well done", Q7response, "is correct")
+                print("your current score is", score)
+        elif Q7response =="a" or Q7response =="A" or Q7response =="b" or Q7response =="B":
+                print("Wrong Answer")
+                print("---------------")
+        print("\n---------------")
+
+        final_score= (score*1)
+        print("Your final score is", final_score)
+        print("---------------")
+        if final_score==8:
+                print("Great Job you got a perfect score")
+                print("Thank you for taking my quiz")
+                print("---------------")
+
+#NEW YORK QUIZ PLAY AGAIN
+def NYCQpa():
+        print("\n-----------------------------------------")
+        again1 = input("\nwould you like to play again?:")
+        if again1== "yes" or again1=="Yes" or again1=="yea" or again1=="ok" or again1=="y":
+                NYCQ()
+        elif again1== "no" or again1=="No" or again1=="nah" or again1=="n":
+                gameoptions()
+                
+                
+
+
+
+
+
+
+
+
+                
+                
+#Parent Abstraction
+def MM():
+        MMPW()
+        MMintro()
+        MMrules()
+        MMbody()
+        MMpa()
+        MMog()
+#run code 
+#password
+def MMPW():
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        Name = input("\nEnter any Username: ")
+        PS=str(input("Enter any Password: "))
+        print("Your password has been Saved")
+        print("------------------------------")
+        print("\nHi there,", Name )
+        print("\n------------------------------")
+#intoduction
+def MMintro():
+        print("\nWelcome to the wealth & life game.")
+        print("------------------------------")
+        print("\nThis Game tests your ability to escape poverty in 10 days.")
+        print("\n------------------------------------------")
+        print("Instructions:")
+        print("\nChoose the best methods to making 10,000 dollars")
+        print("If you do not succeed than you will end up dying \nIf you make the right financial decisions you will win!")
+        print("\n------------------------------------------")
+#Rules
+def MMrules():
+        Rules = str(input("\nwould you like to see some Rules, Advice and Facts?: "))
+        if Rules== "yes" or Rules =="ok" or Rules =="yea" or Rules =="y":
+                print("\n 1. Total time is 10 days & you Start w/ $40 \n \n 2. sleep will increase health +1\n \n 3. Each day you pick that is not sleep results in -1 to health \n \n 4. If health becomes 0 you lose \n \n 5. Checking the inventory will not make any changes \n \n 6. investing money takes up twice the amount of health \n")
+                print("------------------------------------------")
+                print("\nAdvice")
+                print("------")
+                print("- Saving money & educating yourself is a great way to make more money")
+                print("\nFacts")
+                print("------")
+                print("- You start with $40")
+                print("- Asking for money will + $20")
+                print("- sleeping will +1 to health")
+                print("- Reading a book with + $20")
+                print("- saving money will + $200")
+                print("- Investing money will multiple $ by 4")
+                print("- Investing money will -2 to health")
+        else:
+                print("\nChoose your next step on the path to riches")
+#body code loop
+def MMbody():
+        import random
+        done = False
+        money = 15
+        read_books = 3
+        health = 5
+        snacks = 5
+        days = 10
+        inventory_check = 0
+        print("\n------------------------------------------")
+        print("*choose letter A,B,C,D,E,F to start*")
+        while not done:
+                print("\nA. Ask for money.","\nB. read a book.","\nC. Sleep.","\nD. Save money.","\nE. Invest money","\nF. Inventory check","\nQ. Quit.")
+                choice = input("Your choice? ")
+                if choice == "q" or choice == "Q":
+                        done = True
+#The list of choices
+    # Ask for money
+                elif choice == "a" or choice == "A":
+                        print("You got $20 dollars!")
+                        money = money+20
+                        days = days - 1
+                        health = health - 1
+                        print("\nYou now have %d dollars" %(money,))
+                        print("your health is: %d" %(health,))
+                        print("you have %d days left " %(days,))
+                        print("\n------------------------------------------")
+    #Read a book
+                elif choice == "b" or choice == "B":
+                        money = money+20
+                        health = health - 1
+                        days = days - 1
+                        print("\nYou have made $20, Smarts will help you make money")
+                        print("You now have %d dollars" %(money,))
+                        print("your health is: %d" %(health,))
+                        print("you have %d days left " %(days,))
+                        print("\n------------------------------------------")
+    #sleep
+                elif choice == "c" or choice == "C":
+                        health = health + 1
+                        days = days - 1
+                        print("you have %d dollars" %(money,))
+                        print("your health is: %d" %(health,))
+                        print("you have %d days left " %(days,))
+                        print("\n------------------------------------------")
+    #Save money
+                elif choice == "d" or choice == "D":
+                        money = money+200
+                        days = days - 1
+                        health = health - 1
+                        print ("\nYou have saved your money & made $200")
+                        print("\nyou have %d dollars" %(money,))
+                        print("your health is: %d" %(health,))
+                        print("you have %d days left " %(days,))
+                        print("\n------------------------------------------")
+    #Invest money
+                elif choice == "e" or choice == "E":
+                        money=money*4
+                        days = days - 1
+                        health = health - 2
+                        print ("\nYou have invested your money and now have $%d" %(money,))
+                        print("\nyour health is: %d" %(health,))
+                        print("you have %d days left " %(days,))
+                        print("\n*investing produces more money, requrining -2 health*")
+                        print("\n------------------------------------------")
+    #Inventory Check
+                elif choice == "f" or choice == "F":
+                        print("\nInventory Check:")
+                        print("----------------")
+                        print("\n Money: %d\n Health: %d\n Days left: %d" %(money, health, days,))
+                        print("\n------------------------------------------")
+        #Check statements
+        #health warning 
+                if health < 1 :
+                        print("*If your health hits zero you will die*")
+                        print("---------------------------------------")
+        #end due to health
+                if health <= 0 :
+                        print ("\nGame Over!! You let your health get too horrible to survive")
+                        done = True
+        #end due to time!
+                if days <= 0:
+                        print ("\nGame Over you ran out of time")
+                        done = True
+    #won game
+                if money >= 10000 and days >= 0 and health >= 1:
+                        print ("EXCELLENT JOB, YOU HAVE WON THE GAME!!!")
+                        done = True
+
+
+#MONEY MANAGEMENT PLAYAGAIN
+def MMpa():
+        print("\n-----------------------------------------")
+        again2 = input("\nwould you like to play again?:")
+        if again2== "yes" or again2=="Yes"  or again2=="yea" or again2=="ok" or again2=="y":
+                MMintro()
+        if again2== "no" or again2=="No" or again2=="nah" or again2=="n":
+                MMog()
+
+        else:
+                MMpa()
+                
+#MONEY MANAGEMENT OTHERGAME
+def MMog():
+        gameoptions()
+
+
+
+
+
+
+
+
+
+
+
+#NUMBER GAME
+def NG():
+        NGbody()
+        NGQ()
+        NGpa()
+        NGog()
+#NUMBER GAME BODY
+def NGbody():
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\nN-U-M-B-E-R G-A-M-E")
+        print("--------------------------------")
+        name = input("\nTo get started please enter your name: ")
+        print("\nIt's nice to meet you", name)
+        print("---------------------------------------------")
+#NUMEBR GAME QUESTION
+def NGQ():
+        print("\nPlease pick a number between 1-100")
+        guessesTaken = 0
+        import random
+        number = random.randint(1,100)
+        while guessesTaken <15:
+                guess = int(input("\nGuess my number: "))
+                if guess == number:
+                        print("You Got it")
+                        NGpa()
+                elif guess>number:
+                        print("\nyou are Too high")
+                        print("---------")
+                elif guess<number:
+                        print("\nyou are Too low")
+                        print("---------")
+                elif guess == guess>100:
+                        print("\nplease use a number between 1-100")
+                        print("---------")
+                        
+                
+#NUMBER GAME PLAY AGAIN
+def NGpa():
+        print("\n-----------------------------------------")
+        again3 = input("\nwould you like to play again?:")
+        if again3== "yes" or again3=="Yes" or again3=="yea" or again3=="ok" or again3=="y":
+                NG()
+        if again3== "no" or again3=="No" or again3=="nah" or again3=="n":
+                NGog()
+        else:
+                NGpa()
+                        
+#NUMBER GAME OTHERGAME
+def NGog():
+        gameoptions()
+
+
+
+
+
+
+
+
+##AGE IDENTIFIER GAME
+def AI():
+        AIbody()
+        AIpa()
+        AIog()
+def AIbody():
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\n")
+        print("\nWelcome to the age identifier")
+        print("\n---------------------------------------------")
+        name = input("\nTo get started please enter your name: ")
+        print("\nIt's nice to meet you", name)
+        print("\n---------------------------------------------")
+        age = str(input("\nNow that we are acquainted, please enter your age: "))
+        if age == "17" or ( age <= "17"):
+                print("\n-you are not old enough to vote!")
+                print("---------------------------------")
+        elif age == "18" or (age > "18"):
+                print("\n-you are old enough to vote!")
+                print("---------------------------------")
+        if age == "25" or ( age >= "25"):
+                print("\n-you can run for The United States Senate!")
+                print("---------------------------------")
+        if age == "35" or ( age >= "35"):
+                print("\n-and hold any office in the government!")
+                print("---------------------------------")
+        Q1answer="yes"
+        Q1answer= input("\nwould you like to know what each age level is able to do?: ")
+        if Q1answer== "yes":
+                print("\n-----------------------------------------")
+                print("\n+At 18 you can vote\n\n+At 25, you can become a senator\n\n+At 35 you can hold any office in government\n")
+                print("-----------------------------------------")
+                print("\nThank you for using the age identifier")
+#AGE IDENTIFIER PLAYAGAIN
+def AIpa():
+        print("\n-----------------------------------------")
+        again4 = input("\nwould you like to play again?:")
+        if again4== "yes" or again4=="Yes" or again4=="yea" or again4=="ok" or again4=="y":
+                AI()
+        if again4== "no" or again4=="No" or again4=="nah" or again4=="n":
+                AIog()
+        else:
+                AIpa()
+#AGE IDENTIFIER OTHERGAME
+def AIog():
+        gameoptions()
+
+
+gameoptions()
