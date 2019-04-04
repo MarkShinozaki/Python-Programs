@@ -1,0 +1,27 @@
+import math
+print("welcome to the college cost calculator")
+print("--------------------------------------")
+
+def collegebody():
+    direct = int(input("\nwhat is the direct cost of your college?:"))
+    indirect = int(input("\nwhat is the indirect cost of your college?:"))
+    AGS = input("\nDid you get in grants, awards, schloarships?:")
+    if AGS == "yes" or AGS == "Yes" or AGS == "y":
+        Money = int(input("\n How much money did you recieve in grants, awards, schloarships?:"))
+        after = ((direct+indirect-Money)*4)
+        total = (direct+indirect)
+        df = ((direct*4+indirect*4 - Money*4) /4)
+        yolo = (df / 2)
+        print("\nyour cost for all four years will be $%d" %(after,))
+        by = print("\nyour cost each year will be $%d" %(df,))
+        print("\nThe cost of your college per semester will be $%d" %(yolo,)) 
+    elif AGS == "no" or AGS == "No" or AGS == "n":
+        total = (direct+indirect)
+        la = ((total)*4)
+        lb = ((total*4)/4)
+        lc = (lb / 2)
+        print("\nyour cost for all four years will be $%d" %(la,))
+        print("\nyour cost each year will be $%d" %(lb,))
+        print("\nThe cost of your college per semester will be $%d" %(lc,)) 
+
+collegebody()
