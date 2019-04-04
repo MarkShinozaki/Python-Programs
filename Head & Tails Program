@@ -1,0 +1,36 @@
+import random
+'''
+for i in range(10):
+    random_number1=random.randint(1,6)
+    random_number2=random.randint(1,6)
+    print(random_number1)
+    print(random_number2)
+
+
+#simulating a flipping coin 10 times
+# 1 = head and 0 = tail
+
+simNum=0
+flip=random.randint(0,1)
+countHeads=0
+
+while simNum<10:
+    if flip== 1:
+        print("head-", end="")
+        countHeads=countHeads+flip
+        print(countHeads)
+        print(flip)
+        flip=random.randint(0,1)
+        simNum= simNum+1
+'''        
+
+simNum=0
+flip=random.randint(0,1)
+
+while simNum<10:
+    flip=random.randint(0,1)
+    simNum= simNum+1
+    if flip == 0:
+        print("tail")
+    if flip == 1:
+        print("head")
