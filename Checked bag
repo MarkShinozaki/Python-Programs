@@ -1,0 +1,7 @@
+#A programmer designed a program for an airline to determine whether there is an extra fee on a checked bag.
+
+weight = float(input("How much does your luggage weight?:"))
+if weight > 50:
+    print("There is a $25 dollar fee to take this luggage")
+else:
+    print("Your luggage is accepted as is")
