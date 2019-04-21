@@ -1,0 +1,163 @@
+# trivia quiz
+# this quiz tests your knowledge of world geography
+# author: Mark
+
+score = 0
+score= int(score) 
+
+
+print("This quiz tests your knowledge of New York City Facts\n")
+
+name = input("Enter your name: ")
+
+print("\n Hi there", name)
+print("I will ask you 10 questions and give you three choices for each question.\n")
+print("Select the right choice from the options: A, B, C")
+
+print("---------------")
+
+
+
+
+# question 1
+print("Question 1: What is the capital of New York State?")
+print("A: New York City")
+print("B: Syracuse")
+print("C: Albany")
+
+# varibles and if statement
+Q1answer="C"
+Q1response= input("Enter your answer: ")
+if Q1response=="C" or Q1response=="c":
+    score=score+1
+    print("your current score is", score)
+    print("Well done", Q1response, "is correct")
+
+elif Q1response !="C" or Q1response !="c":print("Wrong Answer")
+
+print("---------------")
+
+
+# question 2
+print("Question 2: What is the largest park in New York City?")
+print("A: Washington Square Park")
+print("B: Battery Park")
+print("C: Central Park")
+
+# varibles and if statement
+Q2answer="C"
+Q2response= input("Enter your answer: ")
+if Q2response=="C" or Q2response=="c":
+    score=score+1
+    print("your current score is", score)
+    print("Well done", Q2response, "is correct")
+
+elif Q2response !="C" or Q2response !="c":print("Wrong Answer")
+
+print("---------------")
+
+
+# question 3
+print("Question 3: What subway line ends at 96st?")
+print("A: Q")
+print("B: F")
+print("C: E")
+
+# varibles and if statement
+Q3answer="A"
+Q3response= input("Enter your answer: ")
+if Q3response=="A" or Q3response=="a":
+    score=score+1
+    print("your current score is", score)
+    print("Well done", Q3response, "is correct")
+
+elif Q3response !="A" or Q3response !="a":print("Wrong Answer")
+
+print("---------------")
+
+
+# question 4
+print("Question 4: What is the tallest building in New York City?")
+print("A: Empire State Building")
+print("B: One World Trade Center")
+print("C: Chrysler Building")
+
+# varibles and if statement
+Q4answer="B"
+Q4response= input("Enter your answer: ")
+if Q4response=="B" or Q4response=="b":
+    score=score+1
+    print("your current score is", score)
+    print("Well done", Q4response, "is correct")
+
+elif Q4response !="B" or Q4response !="b":print("Wrong Answer")
+
+print("---------------")
+
+
+
+# question 5
+print("Question 5: What island sits in the East River, between Manhattan and Queens?")
+print("A: Roosevelt Island")
+print("B: Randals Island")
+print("C: Rikers Island")
+
+# varibles and if statement
+Q5answer="A"
+Q5response= input("Enter your answer: ")
+if Q5response=="A" or Q5response=="a":
+    score=score+1
+    print("your current score is", score)
+    print("Well done", Q5response, "is correct")
+
+elif Q5response !="A" or Q5response !="a":print("Wrong Answer")
+
+print("---------------")
+
+
+# question 6
+print("Question 6: What is the only aerial commuter system in North America?")
+print("A: Ocean bridge")
+print("B: Roosevelt Island Tramway")
+print("C: Riverview Skybridge")
+
+# varibles and if statement
+Q6answer="B"
+Q6response= input("Enter your answer: ")
+if Q6response=="B" or Q6response=="b":
+    score=score+1
+    print("your current score is", score)
+    print("Well done", Q6response, "is correct")
+
+elif Q6response !="B" or Q6response !="b":print("Wrong Answer")
+
+print("---------------")
+
+
+
+# question 7
+print("Question 7: Largest retail store location in the Harold Square area?")
+print("A: JC Penny")
+print("B: Best Buy")
+print("C: Macy's")
+
+# varibles and if statement
+Q7answer="C"
+Q7response= input("Enter your answer: ")
+if Q7response=="C" or Q7response=="c":
+    score=score+1
+    print("your current score is", score)
+    print("Well done", Q7response, "is correct")
+
+elif Q7response !="C" or Q7response !="c":print("Wrong Answer")
+
+print("---------------")
+
+
+final_score= (score*1)
+print("Your final score is", final_score)
+
+if final_score==7:
+    print("Great Job you got a perfect score")
+
+print("Thank you for taking my quiz")
