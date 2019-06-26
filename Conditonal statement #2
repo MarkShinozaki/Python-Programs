@@ -1,0 +1,27 @@
+#Task 2
+#Code Guess my Number program. Design steps:
+#imagine the computer picks number 23. Assign this number to a variable.
+#Ask the user to guess this number and store this guess in a varible called guess
+
+print("\nN-U-M-B-E-R G-A-M-E")
+print("--------------------------------")
+
+name = input("\nTo get started please enter your name: ")
+print("\nIt's nice to meet you", name)
+print("---------------------------------------------")
+
+print("\nPlease pick a number between 1-100")
+
+guess = int(input("\nGuess my number: "))
+number = 23
+if guess == 23:
+    print("\nCongrats you guessed it")
+
+elif guess>number:
+    print("\nyou are Too high")
+
+elif guess<number:
+    print("\nyou are Too low")
+
+elif guess == guess>100:
+    print("\nplease use a number between 1-100")
