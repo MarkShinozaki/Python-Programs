@@ -1,0 +1,20 @@
+#Task 4
+#Hurricane Intensity Program
+
+windscore = str(input("\nEnter the current wind speed: "))
+
+
+if (windscore == 74) or (windscore<95) :
+    print("\n-category 1")
+
+elif (windscore == 96) or (windscore <110) :
+    print("\n-category 2")
+
+if windscore == z:
+    print("\n-you can run for The United States Senate")
+
+if windscore == a:
+    print("\n-lol")
+
+if windscore == m:
+    print("\n-and hold any office in the government")
