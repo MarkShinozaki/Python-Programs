@@ -1,0 +1,35 @@
+#Task 3 
+#set a variable Age and give it a value.
+#Change the value to see if the program responds to each situation below,
+#depending on the age.
+
+print("\nWelcome to the age identifier")
+print("--------------------------------")
+
+print("Hi, thank you for using the age indentifier")
+print("---------------------------------------------")
+
+name = input("To get started please enter your name: ")
+print("\nIt's nice to meet you", name)
+print("---------------------------------------------")
+
+age = str(input("Now that we are acquainted, please enter your age: "))
+
+if age == "17" or ( age <= "17"):
+    print("\n-you are not old enough to vote")
+
+elif age == "18" or ( "18" <= "34"):
+    print("\n-you are old enough to vote")
+
+if age == "25" or ( age >= "25"):
+    print("\n-you can run for The United States Senate")
+
+if age == "35" or ( age >= "35"):
+    print("\n-and hold any office in the government")
+
+Q1answer="yes"
+
+Q1answer= input("\nwould you like to know what each age level is able to do?: ")
+if Q1answer== "yes":
+    print("\n-At 18 you can vote, At 25, you can become a senator, At 35 you can hold any office in government")
+    print("\nThank you for using the age identifier")
