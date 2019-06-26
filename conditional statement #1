@@ -1,0 +1,18 @@
+#Sof email for students, teachers, and staff
+
+print("welcome to the SOF email service")
+print("------------------------------")
+firstInitial=str(input("What is the initial of your first name?:"))
+lastName=str(input("What is your last name?:"))
+
+if firstInitial == "M" and lastName== "Shinozaki":
+    print("Your first and last name is confirmed")
+    print("------------------------------")
+    myPassword=str(input("Enter the password: "))
+    if myPassword=="1234":
+        print("You have Successful logged in")
+    else:
+        print("Incorrect. Please try again")
+           
+else:
+    print("Incorrect. Please try again")
